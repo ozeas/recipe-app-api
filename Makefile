@@ -1,5 +1,5 @@
 compose:
-	docker-compose run app sh -c "$(command)"
+	docker-compose run --rm app sh -c "$(command)"
 
 run:
 	make compose command="python manage.py $(command)"
