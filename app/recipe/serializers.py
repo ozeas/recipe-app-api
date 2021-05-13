@@ -13,4 +13,3 @@ class TagSerializer(serializers.ModelSerializer):
 
     def create(self, payload):
         """Create a new tag"""
-        
