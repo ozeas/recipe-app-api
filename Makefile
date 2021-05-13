@@ -9,3 +9,10 @@ tests:
 
 lint:
 	make compose command="flake8"
+
+makemigrations:
+	make run command="makemigrations"
+
+migrate:
+	make makemigrations
+	make run command="migrate"
